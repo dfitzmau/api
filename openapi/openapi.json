@@ -30306,7 +30306,9 @@
           "type": "boolean"
         },
         "disableMultiNetwork": {
-          "description": "disableMultiNetwork specifies whether or not multiple pod network support should be disabled. If unset, this property defaults to 'false' and multiple network support is enabled.",
+          "description": "disableMultiNetwork enables multiple network support when the OVN-Kubernetes Container Network Interface (CNI) plugin sets the parameter to the default value of 'false'.
+          During cluster installation only, you can use a third-party CNI, such as Multus CNI, to set the disableMultiNetwork parameter to 'true', and this setting disables multiple pod network support.
+          Red{nbsp}Hat does not support third-party CNIs.",
           "type": "boolean"
         },
         "disableNetworkDiagnostics": {
